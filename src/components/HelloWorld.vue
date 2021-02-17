@@ -26,7 +26,7 @@
             <services />
         </div>
         <div class="item">
-            <footer />
+            <footerApple />
         </div>
     </section>
   </div>
@@ -41,7 +41,7 @@ import macbook from './macbook.vue'
 import watch from './watch.vue'
 import watch2 from './watch2.vue'
 import services from './services.vue'
-import footer from './footer.vue'
+import footerApple from './footerApple.vue'
 export default {
   name: 'HelloWorld',
     components: {
@@ -53,7 +53,7 @@ export default {
     watch,
     watch2,
     services,
-    footer
+    footerApple
   },
   props: {
     msg: String
