@@ -74,14 +74,6 @@ export default {
         gap: 10px 10px;
         height: 100%;
     }
-    .item {
-        /* background: lightblue; */
-        /* padding: 10px; */
-        /* border: 1px solid red; */
-    }
-    .item .item {
-        /* background: turquoise; */
-    }
     .item:nth-of-type(1) {
         /* background:blue; */
         grid-column-start: 1;

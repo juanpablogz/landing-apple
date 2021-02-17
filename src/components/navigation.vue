@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style soped>
+<style>
 
 header > nav > ul {
     font-size: 14px;
