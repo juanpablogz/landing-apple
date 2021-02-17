@@ -16,7 +16,7 @@ export default {
 <style scoped>
 div > img {
     width: 77%;
-    padding-left: 300px
+    padding-left: 265px
 }
 div {
   text-align: center;

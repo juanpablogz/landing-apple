@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="container">
         <h1>iPhone 12</h1>
         <p>Un salto al siguiente nivel.</p>
         <a href="">Más información</a>
-      <img src="https://res.cloudinary.com/dutj1bbos/image/upload/c_scale,w_598/v1613601105/apple-watch-6s-202009_vhpvi1.jpg" alt="">
+      <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1613601893/T-Mobile-starts-selling-the-Apple-Watch-SE-Series-6-and-new-iPad-a-little-early_mcpoms.jpg" alt="">
   </div>
 </template>
 
@@ -19,8 +19,11 @@ div > img {
     margin: 0 auto;
     margin-top: 20px;
 }
-div {
+.container {
   text-align: center;
-  color:white;
+  color:black;
+}
+img {
+    width: 380px;
 }
 </style>

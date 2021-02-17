@@ -4,7 +4,7 @@
          <nav>
              <ul>
                  <li class="name">
-                    <img src="https://img.icons8.com/color/26/000000/mac-os.png"/>
+                    <img src="https://img.icons8.com/color/26/000000/mac-os.png" style="width: 30px"/>
                  </li>
                  <li class="name">Mac</li>
                  <li class="name">iPad</li>

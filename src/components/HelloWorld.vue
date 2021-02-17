@@ -19,9 +19,15 @@
         <div class="item">
             <watch />
         </div>
-        <div class="item">item #7</div>
-        <div class="item">item #8</div>
-        <div class="item">item #8</div>
+        <div class="item">
+            <watch2 />
+        </div>
+        <div class="item">
+            <services />
+        </div>
+        <div class="item">
+            <footer />
+        </div>
     </section>
   </div>
 </template>
@@ -33,6 +39,9 @@ import amazing from './amazing.vue'
 import ipad from './ipad.vue'
 import macbook from './macbook.vue'
 import watch from './watch.vue'
+import watch2 from './watch2.vue'
+import services from './services.vue'
+import footer from './footer.vue'
 export default {
   name: 'HelloWorld',
     components: {
@@ -41,7 +50,10 @@ export default {
     amazing,
     ipad,
     macbook,
-    watch
+    watch,
+    watch2,
+    services,
+    footer
   },
   props: {
     msg: String
@@ -56,8 +68,8 @@ export default {
     }
     .container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(66, 1fr);
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(66, 1fr); */
         gap: 10px 10px;
         height: 100%;
     }
@@ -99,6 +111,7 @@ export default {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-end: span 11;
+        box-sizing: border-box;
     }
     .item:nth-of-type(6) {
         background:rgb(0,0,0);
@@ -108,19 +121,19 @@ export default {
     }
 
     .item:nth-of-type(7) {
-        background:blue;
+        background:rgb(250,250,250);
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-end: span 11;
     }
     .item:nth-of-type(8) {
-        background:blue;
+        background:rgb(250,250,250);
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-end: span 11;
     }
     .item:nth-of-type(9) {
-        background:blue;
+        background:#FAFAFA;
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-end: span 11;
