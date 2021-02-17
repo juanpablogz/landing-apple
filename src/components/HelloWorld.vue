@@ -1,38 +1,48 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div>
+    <section class="container">
+        <div class="item">
+          <navigation/>
+        </div>
+        <div class="item">
+            <hero/>
+        </div>
+        <div class="item">
+            <amazing />
+        </div>
+        <div class="item">
+            <ipad />
+        </div>
+        <div class="item">
+            <macbook/>
+        </div>
+        <div class="item">
+            <watch />
+        </div>
+        <div class="item">item #7</div>
+        <div class="item">item #8</div>
+        <div class="item">item #8</div>
+    </section>
   </div>
 </template>
 
 <script>
+import navigation from './navigation.vue'
+import hero from './hero.vue'
+import amazing from './amazing.vue'
+import ipad from './ipad.vue'
+import macbook from './macbook.vue'
+import watch from './watch.vue'
 export default {
   name: 'HelloWorld',
+    components: {
+    navigation,
+    hero,
+    amazing,
+    ipad,
+    macbook,
+    watch
+  },
   props: {
     msg: String
   }
@@ -41,18 +51,78 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(66, 1fr);
+        gap: 10px 10px;
+        height: 100%;
+    }
+    .item {
+        /* background: lightblue; */
+        /* padding: 10px; */
+        /* border: 1px solid red; */
+    }
+    .item .item {
+        /* background: turquoise; */
+    }
+    .item:nth-of-type(1) {
+        /* background:blue; */
+        grid-column-start: 1;
+        grid-column-end: 5;
+        position: fixed;
+        width: 100%;
+    }
+    .item:nth-of-type(2) {
+        background:rgb(245,245,247);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(3) {
+        background:rgb(0,0,0);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(4) {
+        background: #F6F7F9;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(5) {
+        background:rgb(0,0,0);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(6) {
+        background:rgb(0,0,0);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
+
+    .item:nth-of-type(7) {
+        background:blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(8) {
+        background:blue;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
+    .item:nth-of-type(9) {
+        background:blue;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-end: span 11;
+    }
 </style>
