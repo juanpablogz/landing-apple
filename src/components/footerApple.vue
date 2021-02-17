@@ -24,5 +24,7 @@ p {
     max-width: 800px;
     text-align: center;
 }
-
+.container {
+  display: inline-block;
+}
 </style>
