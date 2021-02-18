@@ -65,7 +65,6 @@ export default {
 <style scoped>
     body {
         font-family: Arial, Helvetica, sans-serif;
-        zoom: 100%;
     }
     .container {
         display: grid;
