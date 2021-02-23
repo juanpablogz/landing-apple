@@ -35,4 +35,23 @@ div {
 a{
   color: #06c;
 }
+@media (max-width: 600px) {
+  div {
+    height: 1100px;
+  }
+  div > img {
+      width: 100%;
+      padding-left: 0px;
+      margin-top: 28%;
+  }
+  h2 {
+    font-size: 100px;
+  }
+  div > p {
+    font-size: 50px;
+  }
+  a {
+    font-size: 50px;
+  }
+}
 </style>

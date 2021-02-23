@@ -130,4 +130,31 @@ export default {
         grid-column-end: 5;
         grid-row-end: span 11;
     }
+@media (max-width: 600px) {
+    .item:nth-of-type(2) {
+        height: ;
+    }
+    .item:nth-of-type(3) {
+        grid-column-end: 5;
+    }
+    .item:nth-of-type(5) {
+        grid-column-end: 5;
+    }
+    .item:nth-of-type(6) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .item:nth-of-type(7) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .item:nth-of-type(8) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .item:nth-of-type(9) {
+        grid-column-end: 5;
+    }
+}
 </style>
